@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+.header { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header > div > a { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+}
+.header > div { 
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+}
+
+.header > div:nth-child(1) > h3 { 
+    padding-left : 10px;
+}
+
+.header > div:nth-child(2) {
+    width: 120;
+    justify-content: space-between;
+}
+
+.section-select { 
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    
+}
+
+.button-site { 
+    display: flex;
+    height: 30px;
+    font-size : 20px;
+    border: none;
+
+    text-align: center;
+    align-items: center;
+    
+}
+
+.sale { 
+    text-align: center;
+    height: 65;
+    background: url('../imgs/sale-background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide-container{ 
+    display: flex ;
+    align-items: center;
+    overflow: hidden;
+    background : linear(to right, rgb(255,65,108), rgb(255,75,43));
+}
+
+.image-slider{
+    width: 100%;
+    height: auto;
+    left: 0 ; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    transition: .7s;
+}
+
+.slides-div{ 
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px 0 30px;
+}
+
+.img { 
+    max-width: 100%;
+    height: auto;
+
+    position: relative;
+    transition: .5s;
+}
+
+
+

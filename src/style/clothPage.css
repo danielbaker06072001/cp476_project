@@ -1,0 +1,12 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.display-item{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+
+}
+
