@@ -1,5 +1,5 @@
 <?php 
-    function add_to_cart($item ){
+    function add_to_cart($item, $quantity ){
         $servername = "localhost";
         $username = "root";
         $password = "centimut-365:";

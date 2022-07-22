@@ -4,12 +4,13 @@ include($_SERVER['DOCUMENT_ROOT'].'/src/components/api/add_item.php');
 
 // Add item to cart
 if ($action == 'add') {
-
-    $name = $_GET['quantity'];
-    add_to_cart($name);
-    #header("Location: /shoppingPage.php");
+    
+    $name = $_POST['item_name'];
+    $quantity = $_POST['item_quantity'];
+    add_to_cart($name, $quantity);
+    header("Location: /src/components/card/addSuccess.php");
     #exit();
-    // exit();
+    exit();
 }
 ?>
 
@@ -33,7 +34,8 @@ if ($action == 'add') {
         <h2>Item : <?php echo $_POST['item_name']?></h2>
         <h2>Price : <?php echo $_POST['item_price']?></h2>
         <h2>Quantity : <?php echo $_POST['item_quantity']?></h2>
-        <form action = "#" type = "POST">
+        <form action = "" type = "POST">
+            <input class="hidden" name="action" value="add"> 
             <input type = "number" name="quantity" step = "1" min = "1" max = <?php echo $_POST['item_quantity']; ?> value = 1 />
             <button type = "submit"> Add </button>
         </form>

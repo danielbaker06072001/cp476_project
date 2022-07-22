@@ -21,7 +21,7 @@
                 <input class = "hidden" name = "item_price" value = "<?php echo $item_price?>">
                 <input class = "hidden" name = "item_quantity" value = "<?php echo $item_quantity?>">
                 <input class = "hidden" name = "image_url" value = "<?php echo $image_url?>">
-                <button type = "submit"></button>
+                <button type = "submit">View</button>
             </div>
         </form>
 
