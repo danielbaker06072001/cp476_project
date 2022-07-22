@@ -12,7 +12,6 @@
     width: 220px;
     height: 325px;
     background-color: #d3e9f0;
-    border: 1px solid rgb(43, 42, 42);
     padding: 0 10px 0 10px;
     
     margin : 0 auto;
@@ -58,5 +57,9 @@
 
 .add-button:hover{
     border : 1px solid blue;
+}
+
+.submit_button { 
+    border : none;
 }
 

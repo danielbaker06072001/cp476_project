@@ -3,7 +3,6 @@
     <link rel = "stylesheet" href = "/src/style/introPage.css?<?php echo time() ?>">
 </head>
 
-
 <body>
     <div>
         <div class = "header">
@@ -14,13 +13,6 @@
                 </a>
             </div>
 
-            <div>
-                <a href = ""><h3>account</h3></a>
-
-                <a href = "google.com"><img src = "/src/imgs/search.png" width = 16 height = 16 ></a>
-                
-                <a href = "/src/components/cart/cartPage.php"><img src = "/src/imgs/cart.png" width = 16 height = 16></a>
-            </div>
         </div>
 
         <div class = "section-select">
