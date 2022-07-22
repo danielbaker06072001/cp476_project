@@ -10,7 +10,7 @@
             <div>
                 <a href = "http://localhost/shoppingPage.php">
                     <img src = "/src/imgs/flowers.png" alt = "Logo Image" width = 30 height = 30>
-                    <h3>Style Express</h3>
+                    <h3 class = "style-express">Style Express</h3>
                 </a>
             </div>
 

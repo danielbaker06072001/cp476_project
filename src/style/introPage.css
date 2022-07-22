@@ -91,5 +91,9 @@
     transition: .5s;
 }
 
+.style-express {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 

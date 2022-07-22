@@ -7,8 +7,8 @@ if ($action == 'add') {
 
     $name = $_GET['quantity'];
     add_to_cart($name);
-    header("Location: /shoppingPage.php");
-    exit();
+    #header("Location: /shoppingPage.php");
+    #exit();
     // exit();
 }
 ?>
@@ -33,7 +33,7 @@ if ($action == 'add') {
         <h2>Item : <?php echo $_GET['item']?></h2>
         <h2>Price : <?php echo $_GET['price']?></h2>
         <h2>Quantity : <?php echo $_GET['quantity']?></h2>
-        <form action = "#" type = "GET">
+        <form action = "#" type = "POST">
             <input class="hidden" name="action" value="add">    
             <input class="hidden" name="item" value="<?=$_GET['item']?>">
             <input class="hidden" name="price" value="<?=$_GET['price']?>">
