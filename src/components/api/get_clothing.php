@@ -2,10 +2,10 @@
     include($_SERVER['DOCUMENT_ROOT'].'/src/components/card/card-display.php');
 
     function get_inventory($item_type) {
-        $servername = "boiuuvtnh6shtf1xsyg4-mysql.services.clever-cloud.com";
-        $username = "ur47fvzb9jmxdtjg";
-        $password = "neOGqSpnMerbEkBa2466";
-        $databasename = "boiuuvtnh6shtf1xsyg4";
+        $servername = "localhost";
+        $username = "root";
+        $password = "centimut-365:";
+        $databasename = "cp476_internet_computing";
         try { 
             $conn = new PDO("mysql:host=$servername;dbname=$databasename", $username, $password);
             
@@ -24,10 +24,10 @@
     }
 
     function get_inventory_all() {
-        $servername = "boiuuvtnh6shtf1xsyg4-mysql.services.clever-cloud.com";
-        $username = "ur47fvzb9jmxdtjg";
-        $password = "neOGqSpnMerbEkBa2466";
-        $databasename = "boiuuvtnh6shtf1xsyg4";
+        $servername = "localhost";
+        $username = "root";
+        $password = "centimut-365:";
+        $databasename = "cp476_internet_computing";
         try { 
             $conn = new PDO("mysql:host=$servername;dbname=$databasename", $username, $password);
             

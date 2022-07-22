@@ -14,7 +14,7 @@ if ($action == 'add') {
 ?>
 
 <head>
-    <title><?php echo $_GET['item']?></title>
+    <title><?php echo $_POST['item_name']?></title>
     <link rel = "stylesheet" href = "/src/style/itemPage.css?v=<?php echo time() ?>">
 </head>
 
@@ -28,17 +28,13 @@ if ($action == 'add') {
 </style>
 
 <div class = "main-container">
-    <div class = "image-container" style="background-image : url(<?php echo $_GET['url'] ;?>)"></div>
+    <div class = "image-container" style="background-image : url(<?php echo $_POST['image_url'] ;?>)"></div>
     <div class="info-container">
-        <h2>Item : <?php echo $_GET['item']?></h2>
-        <h2>Price : <?php echo $_GET['price']?></h2>
-        <h2>Quantity : <?php echo $_GET['quantity']?></h2>
+        <h2>Item : <?php echo $_POST['item_name']?></h2>
+        <h2>Price : <?php echo $_POST['item_price']?></h2>
+        <h2>Quantity : <?php echo $_POST['item_quantity']?></h2>
         <form action = "#" type = "POST">
-            <input class="hidden" name="action" value="add">    
-            <input class="hidden" name="item" value="<?=$_GET['item']?>">
-            <input class="hidden" name="price" value="<?=$_GET['price']?>">
-            <input class="hidden" name="url" value="<?=$_GET['url']?>">
-            <input type = "number" name="quantity" step = "1" min = "1" max = <?php echo $_GET['quantity']; ?> value = 1 />
+            <input type = "number" name="quantity" step = "1" min = "1" max = <?php echo $_POST['item_quantity']; ?> value = 1 />
             <button type = "submit"> Add </button>
         </form>
     </div>

@@ -2,10 +2,10 @@
     include($_SERVER['DOCUMENT_ROOT'].'/src/components/card/card-display.php');
 
     function get_cart() {
-        $servername = "boiuuvtnh6shtf1xsyg4-mysql.services.clever-cloud.com";
-        $username = "ur47fvzb9jmxdtjg";
-        $password = "neOGqSpnMerbEkBa2466";
-        $databasename = "boiuuvtnh6shtf1xsyg4";
+        $servername = "localhost";
+        $username = "username";
+        $password = "centimut-365:";
+        $databasename = "cp476_internet_computing";
         try { 
             $conn = new PDO("mysql:host=$servername;dbname=$databasename", $username, $password);
             

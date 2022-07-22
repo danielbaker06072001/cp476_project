@@ -1,9 +1,9 @@
 <?php 
     function add_to_cart($item ){
-        $servername = "boiuuvtnh6shtf1xsyg4-mysql.services.clever-cloud.com";
-        $username = "ur47fvzb9jmxdtjg";
-        $password = "neOGqSpnMerbEkBa2466";
-        $databasename = "boiuuvtnh6shtf1xsyg4";
+        $servername = "localhost";
+        $username = "root";
+        $password = "centimut-365:";
+        $databasename = "cp476_internet_computing";
 
         echo ($item);
         try { 
